@@ -18,6 +18,13 @@
   </head>
   <body>
       <h1>Fail...</h1>
-
+      <script>
+        const load = () => {
+            // parent.postMessage("message to be sent", "http://the-website-that-will-receive-the-msg.com")
+            window.parent.postMessage('fail', '*');
+        };
+        window.onload = load;
+        console.log('Fail Page');
+    </script>
   </body>
 </html>
