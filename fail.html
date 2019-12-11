@@ -23,7 +23,7 @@
             // parent.postMessage("message to be sent", "http://the-website-that-will-receive-the-msg.com")
             window.parent.postMessage('fail', '*');
         const hostname = window.parent && window.parent.location && window.parent.location.hostname;  
-        console.log('parent-hostname:', hostname)
+        console.log('Fail-parent-hostname:', hostname)
         };
         window.onload = load;
         console.log('Fail Page');
